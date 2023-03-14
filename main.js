@@ -25,7 +25,7 @@ function handleTryClick(event) {
   } else if (Number(inputNumber.value) > 10 || Number(inputNumber.value) < 0) {
     alert('Escolha um número entre 0 e 10')
     xAttempts--
-  } else if (Number(inputNumber.value) != Number) {
+  } else if (isNaN(inputNumber.value)) {
     alert('Apenas números são válidos. Insira um número.')
     xAttempts--
   }
